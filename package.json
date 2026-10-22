@@ -1,0 +1,21 @@
+{
+  "name": "codex-starwake",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cinematic startup animations for Codex on macOS",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "format": "prettier --write web tests package.json .prettierrc.json .github/workflows/ci.yml",
+    "format:check": "prettier --check web tests package.json .prettierrc.json .github/workflows/ci.yml",
+    "check": "zsh scripts/check.sh",
+    "test": "node --test tests/install.test.mjs",
+    "test:browser": "node --test tests/browser.test.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "prettier": "3.9.10"
+  }
+}

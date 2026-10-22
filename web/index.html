@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Codex Starwake · 守岸人 / 星海苏醒</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="scene" aria-label="守岸人主题 Codex 启动动画">
+      <div class="art" aria-hidden="true"></div>
+      <div class="shade" aria-hidden="true"></div>
+      <div class="aura" aria-hidden="true"></div>
+      <canvas id="stars" aria-hidden="true"></canvas>
+      <div class="frame" aria-hidden="true"></div>
+      <div class="masthead">
+        <span class="edition">CODEX STARWAKE <i></i> 001</span>
+        <button id="skip" aria-label="跳过启动动画">跳过 <span>↗</span></button>
+      </div>
+      <section class="title-block">
+        <div class="eyebrow">
+          <span class="sigil">✧</span> THE SHOREKEEPER
+          <span class="hairline"></span>
+        </div>
+        <h1>于星海之间<span>与你重逢。</span></h1>
+        <p class="poem">循着微光，抵达新的可能。</p>
+        <div class="wordmark">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M7 10 2 16l5 6M25 10l5 6-5 6M20 6l-8 20" /></svg
+          ><span>Codex</span><span class="divider"></span
+          ><span class="theme-name">守岸人</span>
+        </div>
+      </section>
+      <footer>
+        <div class="caption">
+          <span class="pulse"></span><span id="phase">星光正在汇聚</span
+          ><span class="count" id="count">00 / 06</span>
+        </div>
+        <div class="track"><div id="progress"></div></div>
+        <div class="footnote">
+          <span>WHERE THE STARS MEET THE SHORE</span
+          ><span>一程星海 · 一次启程</span>
+        </div>
+      </footer>
+      <div class="curtain" aria-hidden="true"></div>
+      <div id="endcard" hidden>
+        <div class="end-sigil">✧</div>
+        <p>星海已就绪</p>
+        <button id="replay">重新播放 <span>↻</span></button>
+        <small>Codex Starwake · 浏览器预览 / 按空格重播</small>
+      </div>
+    </main>
+    <script src="animation.js"></script>
+  </body>
+</html>
